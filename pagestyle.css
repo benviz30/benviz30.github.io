@@ -1,0 +1,32 @@
+h1 {
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 40px;
+	font-weight: 400;
+	color: rgba(80, 85, 92);
+	margin-top: 2%;
+	margin-bottom: 1%;
+	text-align: center;
+}
+
+#pageDescription {
+	width:75%;
+	margin-left: 12.5%;
+	margin-right: 12.5%;
+	/* padding-left: 12.5%; */
+	/* padding-right: 12.5%; */
+
+}
+
+#pageDescription p {
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	text-align: center;
+	color: rgba(6, 93, 155);
+	margin: 0;
+}
+
+body {
+	background-color: rgba(236, 240, 244);
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certan Artwork</title>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="topnavstyle.css">
+<link rel="stylesheet" href="modalstyle.css">
+<link rel="stylesheet" href="paintingsstyle.css">
+<link rel="stylesheet" href="pagestyle.css">
+
+
+<style>
+
+.left {
+	float:left;
+	padding-top: 2.5%;
+	padding-left: 5%;
+	width:25%;
+}
+
+.right {
+	float:right;
+	padding-top: 2.5%;
+	padding-right:5%;
+	width:25%;
+}
+
+.middle { 
+	float:left;
+	width: 25%;
+	padding-top: 2.5%;
+	padding-left: 7.5%;
+	padding-right: 7.5%;
+}
+
+.image div {
+	text-align: center;
+	padding-bottom:5%;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+	
+	<nav u1>
+		<li1><a href="certanartwork.html">Certan Artwork</a></li1>
+		<li1><a class = "active" href="oilpaintings.html">Oil Paintings</a></li1>
+		<li1><a href="flowerpaintings.html">Flowers</a></li1>
+		<li1><a href="oilpaintings.html">Watercolor Landscapes</a></li1>
+		<li1><a href="oilpaintings.html">Watercolor Seascapes</a></li1>
+		<li1><a href="oilpaintings.html">Animals</a></li1>
+		<li1><a href="oilpaintings.html">My Story In Short</a></li1>
+		<li1><a href="oilpaintings.html">Buying a Certan Artwork</a></li1>
+		<li1><a href="oilpaintings.html">Contact Us</a></li1>
+  
+	</nav u1>
+	
+</div>
+
+<h1>Oil Paintings</h1>
+
+<div id ="pageDescription">
+	<p> "In Moldova, my career as an artist was centered on creating large oil Paintings. 
+		For a time, I stretched my own canvases, mixed my own paints, and even built and gilded my own frames.
+		Although I've been working much more in watercolor lately, I welcome every opportunity to paint in oil. 
+		Although it is a more costly, lengthy, & laborious process, I find it incredibly exciting & fulfilling."
+	</p>
+	<p1>&nbsp;</p1>
+	<p>
+		"Below are just my newest oil paintings available for purchase. Please reach out to discuss these works or to inquire about a personalized commission."
+	</p>
+</div>
+
+<div class = "image">
+	<div class = "left">
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+	</div>
+
+	<div class = "right">
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+	</div>
+
+	<div class = "middle">
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+		
+		<img class = "paintings" id = "img1" src = "benuli.jpg" alt = "Ben & Uliana" style = "width:100%;max-width:400%;height:20%;max-height:100%">
+		<div>Ben & Uliana</div>
+	</div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- The Close Button -->
+	<span class="close">&times;</span>
+
+	<!-- Modal Content (The Image) -->
+	<img class="modal-content" id="img01">
+
+	<!-- Modal Caption (Image Text) -->
+	<div class ="captions">
+		<div id="captionSale"></div>
+	
+		<div id="captionPrice"></div>
+	
+		<div id="captionDescription"></div>
+		
+		<div id="captionSize"></div>
+		
+		<div id="captionSizeFrame"></div>
+		
+		<div id="captionTimeSpent"></div>
+	</div>
+	
+</div>
+
+<script>
+var testVar = "myModal";
+</script>
+
+<script>
+// Get the modal
+var modal = document.getElementById(testVar);
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var images = document.getElementsByClassName("paintings");
+var modalImg = document.getElementById("img01");
+var captionSaleText = document.getElementById("captionSale");
+var captionPriceText = document.getElementById("captionPrice");
+var captionDescriptionText = document.getElementById("captionDescription");
+var captionSizeText = document.getElementById("captionSize");
+var captionSizeFrameText = document.getElementById("captionSizeFrame");
+var captionTimeSpentText = document.getElementById("captionTimeSpent");
+
+
+for (var i = 0; i < images.length; i++) {
+	var img = images[i];
+	img.onclick = function(evt){
+		modal.style.display = "block";
+		modalImg.src = this.src;
+		captionSaleText.innerHTML = 'For Sale'
+		captionPriceText.innerHTML = 'Please reach out to discuss pricing'	
+		captionDescription.innerHTML = 'Still life oil painting of a woven basket overflowing with pansies next to a gold dish holding fresh strawberries, both placed on a lavish marble tabletop.'
+		captionSizeText.innerHTML = '16" x 12" stretched canvas size' 
+		captionSizeFrameText.innerHTML = '25" x 21" altogether with frame'
+		captionTimeSpentText.innerHTML = ' This painting took two weeks to complete. Please reach out for more photos and to discuss its price.';
+	}
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

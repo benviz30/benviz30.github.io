@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Certan Artwork</title>
+<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="topnavstyle.css">
+<link rel="stylesheet" href="lightboxstyle.css">
+<link rel="stylesheet" href="pagestyle.css">
+
+
+</head>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+	
+	<nav u1>
+		<li1><a href="certanartwork.html">Certan Artwork</a></li1>
+		<li1><a href="oilpaintings.html">Oil Paintings</a></li1>
+		<li1><a class = "active" href="flowerpaintings.html">Flowers</a></li1>
+		<li1><a href="oilpaintings.html">Watercolor Landscapes</a></li1>
+		<li1><a href="oilpaintings.html">Watercolor Seascapes</a></li1>
+		<li1><a href="oilpaintings.html">Animals</a></li1>
+		<li1><a href="oilpaintings.html">My Story In Short</a></li1>
+		<li1><a href="oilpaintings.html">Buying a Certan Artwork</a></li1>
+		<li1><a href="oilpaintings.html">Contact Us</a></li1>
+  
+	</nav u1>
+	
+</div>
+
+<h1>Flower Paintings</h1>
+
+<div id ="pageDescription">
+	<p> "Painting flowers inspires and enables me to be bold, bright, and lighthearted. I hope to develop many series of works exploring & perfecting different flowers that are meaningful to me - or to you!"</p>
+	<p>&nbsp;</p>
+	<p>
+	"I've explored pansies in both watercolor and oil, & I enjoy incorporating them in still-life compositions. I'm also growing my collection of vibrant poppy works. Soon, I will begin my series of sunflowers - "Floarea Soarelui".
+	</p>
+</div>
+
+<div class="images">
+  <div class = "left">
+    <img src="ben.jpg" style="width:100%" onclick="openModal();currentSlide(1, m1, c1, d1)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben</div>
+  </div>
+  
+  <div class = "middle">
+    <img src="benuli.jpg" style="width:100%" onclick="openModal2();currentSlide(1, m2, c2, d2)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben & Uliana</div>
+  </div>
+  <div class="right">
+    <img src="ben.jpg" style="width:100%" onclick="openModal();currentSlide(1, m1, c1, d1)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben</div>
+  </div>
+  
+  <div class = "left">
+    <img src="benuli.jpg" style="width:100%" onclick="openModal2();currentSlide(1, m2, c2, d2)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben & Uliana</div>
+  </div>
+  
+  <div class = "middle">
+    <img src="ben.jpg" style="width:100%" onclick="openModal();currentSlide(1, m1, c1, d1)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben</div>
+
+  </div>
+  <div class="right">
+    <img src="benuli.jpg" style="width:100%" onclick="openModal2();currentSlide(1, m2, c2, d2)" class="hover-shadow cursor">
+	<div class = "imgCaptions">Ben & Uliana</div>
+  </div>
+  <!-- <div class="column"> -->
+    <!-- <img src="benuli.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"> -->
+  <!-- </div> -->
+</div>
+
+<div id="myModal" class="modal">
+	<span class="close cursor" onclick="closeModal()">&times;</span>
+	<div class="modal-content">
+
+	<div class="mySlides">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="ben.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="benuli.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="ben.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides">
+	  <div class="numbertext">4 / 4</div>
+	  <img src="benuli.jpg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1, m1, c1, d1)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, m1, c1, d1)">&#10095;</a>
+
+	<div class="caption-container">
+	  <p id="caption1"></p>
+	</div>
+	</div>
+	
+	<div id="slides" class="test">
+		<div class="column">
+		  <img class="demo1 cursor" src="ben.jpg" style="width:100%" onclick="currentSlide(1, m1, c1, d1)" alt="Ben">
+		</div>
+		<div class="column">
+		  <img class="demo1 cursor" src="benuli.jpg" style="width:100%" onclick="currentSlide(2, m1, c1, d1)" alt="Ben & Uliana">
+		</div>
+		<div class="column">
+		  <img class="demo1 cursor" src="ben.jpg" style="width:100%" onclick="currentSlide(3, m1, c1, d1)" alt="Ben">
+		</div>
+		<div class="column">
+		  <img class="demo1 cursor" src="benuli.jpg" style="width:100%" onclick="currentSlide(4, m1, c1, d1)" alt="Ben & Uliana">
+		</div>
+	</div>
+</div>
+
+<div id="myModal2" class="modal2">
+	<span class="close cursor" onclick="closeModal2()">&times;</span>
+	<div class="modal-content2">
+
+	<div class="mySlides2">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="benuli.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides2">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="ben.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides2">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="benuli.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides2">
+	  <div class="numbertext">4 / 4</div>
+	  <img src="ben.jpg" style="width:100%">
+	</div>
+
+	<a class="prev" onclick="plusSlides(-1, m2, c2, d2)">&#10094;</a>
+	<a class="next" onclick="plusSlides(1, m2, c2, d2)">&#10095;</a>
+
+	<div class="caption-container2">
+	  <p id="caption2"></p>
+	</div>
+	</div>
+	
+	<div id="slides" class="test">
+		<div class="column">
+		  <img class="demo2 cursor" src="benuli.jpg" style="width:100%" onclick="currentSlide(1, m2, c2, d2)" alt="Ben & Uliana">
+		</div>
+		<div class="column">
+		  <img class="demo2 cursor" src="ben.jpg" style="width:100%" onclick="currentSlide(2, m2, c2, d2)" alt="Ben">
+		</div>
+		<div class="column">
+		  <img class="demo2 cursor" src="benuli.jpg" style="width:100%" onclick="currentSlide(3, m2, c2, d2)" alt="Ben & Uliana">
+		</div>
+		<div class="column">
+		  <img class="demo2 cursor" src="ben.jpg" style="width:100%" onclick="currentSlide(4, m2, c2, d2)" alt="Ben">
+		</div>
+	</div>
+</div>
+
+
+<script>
+	var windowWidth = $(window).width();
+	var windowHeight = $(window).height();
+</script>
+
+<script>
+var m1 = "mySlides";
+var m2 = "mySlides2";
+var c1 = "caption1";
+var c2 = "caption2";
+var d1 = "demo1";
+var d2 = "demo2";
+
+
+var caption1 = "Take a closer look at the detailing on the gold dish and the butterfly on the purple pansy. "+
+"This playful arrangement makes it seem like the sculpted, gold salamander is preparing to capture and eat the live butterfly. "+
+"I like to really work through the center of the composition and leave the outer corners purposefully 'unfinished' and vague, adding to the atmosphere but not detracting from the other parts. "+
+"I'd love to hear from you about the portion that caught your eye.";
+
+var caption2 = "Testing 2";
+</script>
+
+<script>
+
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function openModal2() {
+  document.getElementById("myModal2").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+function closeModal2() {
+  document.getElementById("myModal2").style.display = "none";
+}
+
+var slideIndex = 1;
+<!-- showSlides(slideIndex, m, c, d); -->
+
+function plusSlides(n, m, c, d) {
+  showSlides(slideIndex += n, m, c, d);
+}
+
+function currentSlide(n, m, c, d) {
+  showSlides(slideIndex = n, m, c, d);
+}
+
+function showSlides(n, m, c, d) {
+  var i;
+  var slides = document.getElementsByClassName(m);
+  var dots = document.getElementsByClassName(d);
+  var captionText = document.getElementById(c);
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  <!-- captionText.innerHTML = dots[slideIndex-1].alt; -->
+  captionText.innerHTML = caption2;
+}
+</script>
+
+</body>
+</html>
